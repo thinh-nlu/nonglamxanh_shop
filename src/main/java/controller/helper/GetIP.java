@@ -1,9 +1,9 @@
-package helper;
+package controller.helper;
 
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 
-public class Connect extends HttpServlet {
+public class GetIP extends HttpServlet {
     public static String getIpAddress(HttpServletRequest request) {
         String ip = request.getHeader("X-Forwarded-For");
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {

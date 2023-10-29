@@ -26,7 +26,7 @@
 <body class="">
 <div id="container_header"></div>
 <script>
-    fetch("../include/header.html")
+    fetch("../include/header.jsp")
         .then(response => response.text())
         .then(data => {
             document.getElementById("container_header").innerHTML = data;

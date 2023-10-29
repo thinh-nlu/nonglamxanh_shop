@@ -1,3 +1,4 @@
+<%@ page import="controller.helper.DBConnection" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,12 +37,13 @@
 <body>
 <div id="container_header"></div>
 <script>
-	fetch("../include/header.html")
+	fetch("../include/header.jsp")
 			.then(response => response.text())
 			.then(data => {
 				document.getElementById("container_header").innerHTML = data;
 			});
 </script>
+<% System.out.println(DBConnection.getConnection()); %>
 <!-- Start Main Top -->
 <header class="main-header">
 	<!-- Start Navigation -->
@@ -131,7 +133,7 @@
 				<div class="row justify-content-center">
 					<div class="signin-form">
 						<h2 class="form-title mt-5">Đăng Nhập</h2>
-						<form method="post" action="login" class="mt-3" id="formLogin">
+						<form method="post" action="" class="mt-3" id="formLogin">
 							<div class="form-col md-3">
 								<div class="form-group">
 									<label for="name" class="mb-0">Tên Đăng Nhập</label>
@@ -156,7 +158,7 @@
 <footer>
 	<div id="container_footer"></div>
 	<script>
-		fetch("../include/footer.html")
+		fetch("../include/footer.jsp")
 				.then(response => response.text())
 				.then(data => {
 					document.getElementById("container_footer").innerHTML = data;
