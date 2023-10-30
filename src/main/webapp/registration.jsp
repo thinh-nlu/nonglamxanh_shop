@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page isELIgnored="false" %>
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-	<!-- Mobile Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Site Metas -->
 	<title>NongLamXanh</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
@@ -33,13 +27,7 @@
 </head>
 <body>
 <div id="container_header"></div>
-<script>
-	fetch("../include/header.jsp")
-			.then(response => response.text())
-			.then(data => {
-				document.getElementById("container_header").innerHTML = data;
-			});
-</script>
+<jsp:include page="include/header.jsp"/>
 <!-- Start Main Top -->
 <header class="main-header">
 	<!-- Start Navigation -->
@@ -155,7 +143,7 @@
 								</div>
 								<div class="mb-5">
 									<button type="submit" class="btn hvr-hover">Đăng Ký</button>
-									<p>Bạn đã có tài khoản ? <a href="account/login.jsp">Đăng Nhập Ngay</a></p>
+									<p>Bạn đã có tài khoản ? <a href="login.jsp">Đăng Nhập Ngay</a></p>
 								</div>
 							</form>
 						</div>

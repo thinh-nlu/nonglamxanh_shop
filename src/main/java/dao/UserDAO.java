@@ -5,43 +5,59 @@ import model.User;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class UserDAO {
     private Connection con;
     private String query;
     private PreparedStatement ps;
-    private int rs;
+
+    private ResultSet rs;
 
     public UserDAO(Connection con) {
         this.con = con;
     }
 
-    public User userRegister(String username, String email, String password, String ip, String mobile) {
-        User user = null;
+    public int userRegister(String username, String email, String password, String ip, String mobile) {
+        int rowCount = 0;
+
         try {
-            query = "insert into user_table(id,username,user_email,user_password,user_ip,user_mobile,admin) values (?,?,?,?,?,?,?)";
+            query = "insert into user_table(username,user_email,user_password,user_ip,user_mobile,admin) values (?,?,?,?,?,?)";
             ps = this.con.prepareStatement(query);
 
-            ps.setString(1,"1");
-            ps.setString(2,username);
-            ps.setString(3,email);
-            ps.setString(4,password);
-            ps.setString(5,ip);
-            ps.setString(6,mobile);
-            ps.setString(7,"0");
+            ps.setString(1,username);
+            ps.setString(2,email);
+            ps.setString(3,password);
+            ps.setString(4,ip);
+            ps.setString(5,mobile);
+            ps.setString(6,"0");
 
-            rs = ps.executeUpdate();
-
-            if (rs > 0) {
-                user = new User();
-
-
-            }
+            rowCount = ps.executeUpdate();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        return user;
+        return rowCount;
+    }
+
+    public boolean checkLogin(String username, String password) throws SQLException {
+        boolean isValid = false;
+
+        query = "select * from user_table where username = ? and user_password = ?";
+
+        ps = con.prepareStatement(query);
+
+        ps.setString(1,username);
+        ps.setString(2,password);
+
+        rs = ps.executeQuery();
+
+        if (rs.next()) {
+            isValid = true;
+        } else {
+            isValid = false;
+        }
+        return isValid;
     }
 }
