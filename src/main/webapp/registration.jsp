@@ -18,13 +18,13 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Site CSS -->
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="../css/responsive.css">
+	<link rel="stylesheet" href="css/responsive.css">
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="../css/custom.css">
+	<link rel="stylesheet" href="css/custom.css">
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -50,25 +50,25 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fa fa-bars"></i>
 				</button>
-				<a class="navbar-brand" href="../index.jsp"><img src="../images/logo.png" class="logo" alt=""></a>
+				<a class="navbar-brand" href="index.jsp"><img src="images/logo.png" class="logo" alt=""></a>
 			</div>
 			<!-- End Header Navigation -->
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navbar-menu">
 				<ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-					<li class="nav-item active"><a class="nav-link" href="../index.jsp">Trang Chủ</a></li>
-					<li class="nav-item"><a class="nav-link" href="../about.jsp">Giới Thiệu</a></li>
+					<li class="nav-item active"><a class="nav-link" href="index.jsp">Trang Chủ</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.jsp">Giới Thiệu</a></li>
 					<li class="dropdown">
 						<a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Tiện Ích</a>
 						<ul class="dropdown-menu">
-							<li><a href="../tien_ich/cart.jsp">Giỏ Hàng</a></li>
-							<li><a href="../tien_ich/checkout.jsp">Thanh Toán</a></li>
-							<li><a href="../tien_ich/my-account.jsp">Tài Khoản</a></li>
+							<li><a href="tien_ich/cart.jsp">Giỏ Hàng</a></li>
+							<li><a href="tien_ich/checkout.jsp">Thanh Toán</a></li>
+							<li><a href="tien_ich/my-account.jsp">Tài Khoản</a></li>
 						</ul>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="../gallery.jsp">Cửa Hàng</a></li>
-					<li class="nav-item"><a class="nav-link" href="../contact-us.jsp">Liên Hệ</a></li>
+					<li class="nav-item"><a class="nav-link" href="gallery.jsp">Cửa Hàng</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact-us.jsp">Liên Hệ</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -155,7 +155,7 @@
 								</div>
 								<div class="mb-5">
 									<button type="submit" class="btn hvr-hover">Đăng Ký</button>
-									<p>Bạn đã có tài khoản ? <a href="login.jsp">Đăng Nhập Ngay</a></p>
+									<p>Bạn đã có tài khoản ? <a href="account/login.jsp">Đăng Nhập Ngay</a></p>
 								</div>
 							</form>
 						</div>

@@ -5,8 +5,10 @@
   <artifactId>nonglamxanh_shop</artifactId>
   <packaging>war</packaging>
   <properties>
-    <maven.compiler.source>19</maven.compiler.source>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.target>19</maven.compiler.target>
+    <maven.compiler.source>19</maven.compiler.source>
+    <junit.version>5.9.1</junit.version>
   </properties>
   <version>1.0-SNAPSHOT</version>
   <name>nonglamxanh_shop Maven Webapp</name>

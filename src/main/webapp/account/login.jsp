@@ -146,7 +146,7 @@
 							</div>
 							<div class="mb-5">
 								<button type="submit" class="btn hvr-hover">Đăng Nhập</button>
-								<p>Bạn chưa có tài khoản ? <a href="registration.jsp">Đăng Ký Ngay</a></p>
+								<p>Bạn chưa có tài khoản ? <a href="../registration.jsp">Đăng Ký Ngay</a></p>
 							</div>
 						</form>
 					</div>
