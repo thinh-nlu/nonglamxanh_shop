@@ -113,7 +113,7 @@
 <div class="container mt-3">
     <h1 class="text-center">Thêm sản phẩm</h1>
     <!-- form -->
-    <form action="" method="post" enctype="multipart/form-data">
+    <form action="insert-product" method="post" enctype="multipart/form-data">
         <!-- title -->
         <div class="form-outline mb-4 w-50 m-auto">
             <label for="product_title" class="form-label">Tên sản phẩm</label>
