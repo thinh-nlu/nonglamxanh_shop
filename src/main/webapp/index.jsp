@@ -1,14 +1,11 @@
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="en">
 <!-- Basic -->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Site Metas -->
     <title>NongLamXanh</title>
     <meta name="keywords" content="">
@@ -38,13 +35,7 @@
 <body>
 
 <div id="container_header"></div>
-<script>
-    fetch("include/header.jsp")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("container_header").innerHTML = data;
-        });
-</script>
+<jsp:include page="include/header.jsp"/>
     <!-- Start Main Top -->
     <header class="main-header">
         <!-- Start Navigation -->
@@ -494,14 +485,7 @@
 
     <!-- Start Footer  -->
 <footer>
-    <div id="container_footer"></div>
-    <script>
-        fetch("include/footer.jsp")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("container_footer").innerHTML = data;
-            });
-    </script>
+    <jsp:include page="include/footer.jsp"/>
 </footer>
     <!-- End Footer  -->
 

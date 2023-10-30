@@ -19,13 +19,13 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Site CSS -->
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="../css/responsive.css">
+	<link rel="stylesheet" href="css/responsive.css">
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="../css/custom.css">
+	<link rel="stylesheet" href="css/custom.css">
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -54,25 +54,25 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fa fa-bars"></i>
 				</button>
-				<a class="navbar-brand" href="../index.jsp"><img src="../images/logo.png" class="logo" alt=""></a>
+				<a class="navbar-brand" href="index.jsp"><img src="images/logo.png" class="logo" alt=""></a>
 			</div>
 			<!-- End Header Navigation -->
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navbar-menu">
 				<ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-					<li class="nav-item active"><a class="nav-link" href="../index.jsp">Trang Chủ</a></li>
-					<li class="nav-item"><a class="nav-link" href="../about.jsp">Giới Thiệu</a></li>
+					<li class="nav-item active"><a class="nav-link" href="index.jsp">Trang Chủ</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.jsp">Giới Thiệu</a></li>
 					<li class="dropdown">
 						<a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Tiện Ích</a>
 						<ul class="dropdown-menu">
-							<li><a href="../tien_ich/cart.jsp">Giỏ Hàng</a></li>
-							<li><a href="../tien_ich/checkout.jsp">Thanh Toán</a></li>
-							<li><a href="../tien_ich/my-account.jsp">Tài Khoản</a></li>
+							<li><a href="tien_ich/cart.jsp">Giỏ Hàng</a></li>
+							<li><a href="tien_ich/checkout.jsp">Thanh Toán</a></li>
+							<li><a href="tien_ich/my-account.jsp">Tài Khoản</a></li>
 						</ul>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="../gallery.jsp">Cửa Hàng</a></li>
-					<li class="nav-item"><a class="nav-link" href="../contact-us.jsp">Liên Hệ</a></li>
+					<li class="nav-item"><a class="nav-link" href="gallery.jsp">Cửa Hàng</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact-us.jsp">Liên Hệ</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -133,7 +133,7 @@
 				<div class="row justify-content-center">
 					<div class="signin-form">
 						<h2 class="form-title mt-5">Đăng Nhập</h2>
-						<form method="post" action="" class="mt-3" id="formLogin">
+						<form method="post" action="Login" class="mt-3" id="formLogin">
 							<div class="form-col md-3">
 								<div class="form-group">
 									<label for="name" class="mb-0">Tên Đăng Nhập</label>
@@ -146,7 +146,7 @@
 							</div>
 							<div class="mb-5">
 								<button type="submit" class="btn hvr-hover">Đăng Nhập</button>
-								<p>Bạn chưa có tài khoản ? <a href="../registration.jsp">Đăng Ký Ngay</a></p>
+								<p>Bạn chưa có tài khoản ? <a href="registration.jsp">Đăng Ký Ngay</a></p>
 							</div>
 						</form>
 					</div>
@@ -168,20 +168,20 @@
 <!-- End Footer  -->
 <!-- JS -->
 <!-- All JS Files -->
-<script src="../js/jquery-3.2.1.min.js"></script>
-<script src="../js/popper.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <!-- All Plugins -->
-<script src="../js/jquery.superslides.min.js"></script>
-<script src="../js/bootstrap-select.js"></script>
-<script src="../js/inewsticker.js"></script>
+<script src="js/jquery.superslides.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script src="js/inewsticker.js"></script>
 <script src="js/bootsnav.js."></script>
-<script src="../js/images-loded.min.js"></script>
-<script src="../js/isotope.min.js"></script>
-<script src="../js/owl.carousel.min.js"></script>
-<script src="../js/baguetteBox.min.js"></script>
-<script src="../js/form-validator.min.js"></script>
-<script src="../js/contact-form-script.js"></script>
-<script src="../js/custom.js"></script>
+<script src="js/images-loded.min.js"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/baguetteBox.min.js"></script>
+<script src="js/form-validator.min.js"></script>
+<script src="js/contact-form-script.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
